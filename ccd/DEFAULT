@@ -1,0 +1,46 @@
+push "dhcp-option DNS 1.1.1.1" # Second DNS CF
+push "route 1.1.1.1"
+
+push "dhcp-option DNS 74.82.42.42" # First DNS HE.net
+push "route 74.82.42.42" # Route to HE.net DNS
+
+#push "dhcp-option DNS6 2001:4860:4860::8888" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8888"
+
+#push "dhcp-option DNS6 2001:4860:4860::8844" # Google ipv6 dns
+#push "route-ipv6 2001:4860:4860::8844"
+
+#Persist TUN
+push "persist-tun"
+
+# Routes
+
+# Test via ip.mail.ru
+push "route 185.5.136.119 255.255.255.255"
+
+# Usual services
+push "route 8.8.0.0 255.255.0.0"
+push "route 23.0.0.0 255.0.0.0"
+push "route 31.13.0.0 255.255.0.0"
+push "route 52.0.0.0 255.0.0.0"
+push "route 54.0.0.0 255.0.0.0"
+push "route 64.233.0.0 255.255.0.0"
+push "route 68.232.44.0 255.255.255.0"
+push "route 72.246.0.0 255.255.0.0"
+push "route 74.125.0.0 255.255.0.0"
+push "route 91.108.0.0 255.255.0.0"
+push "route 103.245.0.0 255.255.0.0"
+push "route 104.238.160.0 255.255.255.0"
+push "route 104.244.0.0 255.255.0.0"
+push "route 108.160.0.0 255.255.0.0"
+push "route 108.177.0.0 255.255.0.0"
+push "route 125.56.0.0 255.255.0.0"
+push "route 149.154.0.0 255.255.0.0"
+push "route 162.125.82.0 255.255.255.0"
+push "route 162.212.0.0 255.255.0.0"
+push "route 172.217.0.0 255.255.0.0"
+push "route 173.194.0.0 255.255.0.0"
+push "route 173.252.0.0 255.255.0.0"
+push "route 174.0.0.0 255.0.0.0"
+push "route 176.9.39.0 255.255.255.0"
+push "route 185.11.124.0 255.255.255.0"
