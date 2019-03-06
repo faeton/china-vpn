@@ -139,4 +139,6 @@ push "route 151.101.0.0 255.255.0.0"
 # Cloudflare (Discord, etc)
 push "route 104.16.0.0 255.240.0.0"
 
+# BITLY
+push "route 67.199.248.0 255.255.255.0"
 
